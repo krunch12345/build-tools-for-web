@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Инструменты сборки Web-проектов</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+
+<header class="header-footer header-container">
+    <div class="info container">
+        <button type="submit" id="submitDateCalc">Калькулятор дат</button>
+        <button type="submit" id="submitTimer">Таймер</button>
+    </div>
+</header>
+
+<main class="container main-content">
+    <div class="hidden" id="dateCalc">
+        <h2>Калькулятор дат</h2>
+
+        <form id="calcDate">
+            <label for="dateFrom">
+                Первая дата:
+                <input type="date" name="dateFrom" id="dateFrom">
+            </label>
+
+            <label for="dateTo">
+                Вторая дата:
+                <input type="date" name="dateTo" id="dateTo">
+            </label>
+
+            <button type="submit">Рассчитать промежуток</button>
+        </form>
+
+        <p class="output"></p>
+    </div>
+
+    <div class="hidden" id="timer">
+        <h2>Таймер</h2>
+
+        <label for="time">
+            Секунд до остановки:
+            <input type="text" name="time" id="time">
+        </label>
+
+        <div class="timerButtons">
+            <button id="start">Старт</button>
+            <button id="stop">Стоп</button>
+        </div>
+
+        <p class="timer"></p>
+    </div>
+</main>
+
+<footer class="header-footer footer-container">
+    <div class="info footer-info container">
+        <span>Инструменты сборки Web-проектов</span>
+        <span>2021, Константин Чукреев</span>
+    </div>
+</footer>
+
+</body>
+</html>
