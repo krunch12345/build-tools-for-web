@@ -1,4 +1,4 @@
-import { DateTime } from '../libs/luxon.js'
+import { DateTime } from 'luxon'
 
 export const getDateDiff = (dateFrom, dateTo) => {
     if (dateFrom < dateTo) {
