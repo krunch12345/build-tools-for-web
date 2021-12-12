@@ -1,5 +1,5 @@
 import { printError } from '../utils/print.js'
-import '../libs/howler.js'
+import { Howl } from 'howler'
 
 const input = document.getElementById('time')
 const blockTime = document.querySelector('.timer')
